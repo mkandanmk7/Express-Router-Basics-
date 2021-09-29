@@ -53,37 +53,3 @@ server.put("/users/:id", userData);
 server.listen(port, () => {
   console.log(`server Started at ${port}`);
 });
-
-// extra
-
-// server.get("/posts", (req, res, next) => {
-//   console.log("Posts get middle ware called");
-//   // find
-//   console.log(req.query);
-//   res.send(posts);
-//   // res.end();
-// });
-
-// server.delete("/posts/:id", (req, res, next) => {
-//   console.log("Posts delete middle ware called");
-//   console.log("Delete id is :", req.params.id);
-//   // deleteOne
-//   res.end();
-// });
-
-// server.post("/posts", (req, res, next) => {
-//   console.log("Posts post middle ware called");
-
-//   console.log(req.body);
-//   //insert
-//   res.send({ ...req.body, id: 101 });
-// });
-
-// server.put("/posts/:id", (req, res, next) => {
-//   console.log("Posts put middle ware called");
-
-//   console.log(req.body);
-//   console.log(req.params);
-//   //findOneUpdateOne;
-//   res.send({ ...req.body, id: req.params.id });
-// });
